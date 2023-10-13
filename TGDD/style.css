@@ -80,15 +80,65 @@ nav ul li input {
     text-align:center;
     margin-top: 15px;
 }
-.menu-laptop{
-background-color: #e0e0e0;
-display: flex;
-justify-content: center;
-padding: 15px 0;
-max-width: 1200px;
-margin: auto;
-margin-top: 10px;
-border-radius: 12px;
+.slider-product1-content {
+    background-color: #ff0020;
+}
+.slider-product1-content-items{
+    display: flex;
+    justify-content:space-evenly;
+}
+.slider-product1-content-item {
+    width: 19%;
+    background-color: #fff;
+    padding: 50px 12px 50px;
+    cursor: pointer;
+}
+.slider-product1-content-item-text table tr td {
+    padding: 50px 12px 12px;
+}
+
+    .slider-product1-content-item-text table tr td span {
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        color: #333;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 12px;
+        margin-right: 5px;
+        padding: 4px 5px;
+        margin-bottom: 5px;
+    }
+
+    .slider-product1-content-item-text table tr td p {
+        color: #222;
+        font-size: 12px;
+        line-height: 22px;
+        display: flex;
+        column-count: 2;
+        column-fill: balance;
+    }
+.slider-product1-content-item > img{
+    width: 200px;
+}
+.slider-product1-content-item-text {
+    padding-top: 20px;
+}
+        #ss {
+            color: #2f80ed;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 7px;
+            display: block;
+        }
+.menu-laptop {
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 12px;
 }
 .menu-lap {
     display: grid;

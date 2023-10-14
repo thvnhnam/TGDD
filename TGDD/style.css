@@ -13,7 +13,7 @@ a{
 .container {
     max-width:1200px;
     margin:auto;
-    height: 40px;
+    height: 50px;
 }
 header{
     background-color:#000;
@@ -23,28 +23,25 @@ header{
 nav {
     background-color: #ffd400;
 }
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-nav ul li, a{
-    color: black;
-    font-size:14px;
-}
-nav ul li:nth-child(3) i{
-    position: absolute;
-    font-size: 20px;
-    right: 12px;
-    line-height: 30px;
-    cursor: pointer;
-  
-
-}
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul li, a {
+        color: black;
+        font-size: 14px;     
+    }
+    nav ul li:nth-child(3) i {
+        position: absolute;
+        font-size: 20px;
+        right:720px;
+        line-height: 30px;
+        cursor: pointer;
+    }
 nav ul li input {
     height: 35px;
-    width: 250px;
+    width: 300px;
     border-radius: 5px;
     border:none;
     padding-left:6px;
@@ -87,12 +84,19 @@ nav ul li input {
     display: flex;
     justify-content:space-evenly;
 }
-.slider-product1-content-item {
-    width: 19%;
-    background-color: #fff;
-    padding: 50px 12px 50px;
-    cursor: pointer;
+.slider-product1-content-item-text table tr :hover a img {
+    transform: translateY(-8px);
 }
+    .slider-product1-content-item-text table tr td:hover p a{
+        color:blue;
+    }
+
+    .slider-product1-content-item {
+        width: 19%;
+        background-color: #fff;
+        padding: 50px 12px 50px;
+        cursor: pointer;
+    }
 .slider-product1-content-item-text table tr td {
     padding: 50px 12px 12px;
 }
@@ -117,8 +121,9 @@ nav ul li input {
         column-count: 2;
         column-fill: balance;
     }
-.slider-product1-content-item > img{
+.slider-product1-content-items > img{
     width: 200px;
+    transition: all 0.5s ease;
 }
 .slider-product1-content-item-text {
     padding-top: 20px;
@@ -171,6 +176,7 @@ nav ul li input {
 #discount{
     display:inline;
     font-size:small;
+    margin-left: 5px;
 }
 #new-price{
     color:red;
@@ -180,11 +186,15 @@ nav ul li input {
 #prod-table{
     border-spacing: 10px;
 }
-#prod-td{
-    width: 25%;
-    height: 250px;
-    border: groove;
-}
+        #prod-table tr td a i {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    #prod-td {
+        width: 25%;
+        height: 250px;
+        border: groove;
+    }
 h1 {
     font-size: 18px;
     line-height: 16px;

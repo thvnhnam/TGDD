@@ -155,6 +155,43 @@ nav ul li input {
     margin: auto;
     text-align: center;
 }
+.menu-top > div {
+    display: grid;
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(8,minmax(0,1fr));
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.iconlt-dealsoc {
+    background-position: 0 0;
+    width: 35px;
+    height: 40px;
+}
+.menu-top .nav-item {
+    color: #000;
+    font-size: 16px;
+    line-height: 17px;
+}
+    .menu-top .nav-item:hover div {
+        background-color: #ffd400;
+    }
+    .menu-top .nav-item .box-icon {
+        align-items: center;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        height: 56px;
+        margin: 0 auto 6px;
+        width: 56px;
+        background-color: #fff;
+    }
+.menu-top {
+    background-color: #f1f1f1;
+    max-width: 1920px;
+    padding: 15px 0;
+    margin: auto;
+}
 .menu-laptop td {
     align-items: center;
     border-radius: 34px;
@@ -195,6 +232,17 @@ nav ul li input {
         height: 250px;
         border: groove;
     }
+.all-laptop {
+    margin-left: 400px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 40px;
+    width: 380px;
+    background-color: #fff;
+    padding: 0 20px;
+    border: 0;
+}
 h1 {
     font-size: 18px;
     line-height: 16px;

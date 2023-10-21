@@ -15,6 +15,8 @@ a{
     margin:auto;
     height: 50px;
 }
+
+/*-------- Header ----------*/
 header{
     background-color:#000;
     text-align:center;
@@ -75,7 +77,7 @@ nav ul li input {
 }
 .slider-content {
     text-align:center;
-    margin-top: 15px;
+/*    margin-top: 15px;*/
 }
 .slider-product1-content {
     background-color: #ff0020;
@@ -126,7 +128,7 @@ nav ul li input {
     transition: all 0.5s ease;
 }
 .slider-product1-content-item-text {
-    padding-top: 20px;
+/*    padding-top: 20px;*/
 }
         #ss {
             color: #2f80ed;
@@ -135,16 +137,44 @@ nav ul li input {
             margin-top: 7px;
             display: block;
         }
-.menu-laptop {
-    background-color: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 12px;
+.slider-product1-content-items-content{
+    position:relative;
+    height: 550px;
 }
+.slider-product1-content-items:nth-child(2){
+/*    transform: translateX(100%);*/
+    
+}
+.slider-product1-content-container {
+    /*    position: relative;*/
+}
+.slider-product-left-top-btn {
+    position: absolute;
+    top: 120px;
+    display: flex;
+    justify-content: space-between;
+    width: 83.5%;
+}
+    .slider-product-left-top-btn i {
+        color: #333;
+        font-size: 32px;
+        height: 50px;
+        width: 25px;
+        background-color: rgba(216,216,216,.7);
+        display: flex;
+        align-self: center;
+        align-items: center;
+    }
+    .menu-laptop {
+        background-color: #e0e0e0;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 12px;
+    }
 .menu-lap {
     display: grid;
     grid-auto-rows: minmax(min-content,max-content);
@@ -220,8 +250,40 @@ nav ul li input {
     font-weight:bold;
     font-size:medium;
 }
+#prod-gaming{
+    border-spacing: 7px;
+}
+#prod-gaming tr td a i {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+#prod-gaming {
+    border-spacing: 7px;
+}
+
+    #prod-gaming tr td a i {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+#prod-macbook {
+    border-spacing: 7px;
+}
+
+    #prod-macbook tr td a i {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+#prod-vanphong {
+    border-spacing: 7px;
+}
+
+    #prod-vanphong tr td a i {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
 #prod-table{
     border-spacing: 10px;
+  
 }
         #prod-table tr td a i {
         margin-right: 5px;
@@ -249,9 +311,30 @@ h1 {
     font-weight: 600;
     margin-top:20px;
 }
-.infomation {
-    margin-left: 120px;
+.infomation div {
+    display: grid;
+    grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(10,minmax(0,1fr));
+    margin-bottom: 70px;
 }
+    .infomation div a {
+        display: block;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #333;
+        margin-top: 20px;
+       
+    }
+        .infomation div a img {
+            display: block;
+            width: 50%;
+            height: auto;
+            margin: auto;
+        }
+        .infomation {
+            margin-left: 120px;
+        }
 #ads {
     width: 244.75px;
     margin-right: 15px;
@@ -259,4 +342,123 @@ h1 {
 #info {
     max-height: 150px;
     max-width: 300px;
+}
+#more {
+    width: 20px;
+    height:20px;
+}
+
+/*---------- Footer ---------------*/
+.footer__top {
+    padding: 15px 0 5px;
+}
+.footer__col {
+    float: left;
+    width: 24%;
+}
+    .footer__col:nth-child(2) {
+        width: 19%;
+    }
+    .footer__col:nth-child(3) {
+        width: 28%;
+    }
+    .footer__col:nth-child(4) {
+        width: 29%;
+    }
+.f-social {
+    margin-bottom: 20px;
+}
+    .f-social a {
+        color: #2f80ed;
+        margin-right: 10px;
+    }
+        .f-social a img {
+            margin-right: 5px;
+            height: 15px;
+            width: 15px;
+        }
+.f-certify {
+    margin-bottom: 20px;
+}
+    .f-certify a img {
+        margin-right: 5px;
+        display: inline-block;
+        vertical-align: top;
+        
+    }
+    .f-certify a img {
+        height: 50px;
+        width: 350px;
+    }
+        
+.footer__logo {
+    background-color: #fff;
+}
+.footer__logo-hd {
+    color: #222;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/*------- ProductCategory ---------*/
+.link {
+    margin: 0 10px;
+}
+.link li {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+    .link li a {
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 14px;
+        color: #288ad6;
+    }
+        .link .sort-total {
+            margin-bottom: 0;
+            font-weight: normal;
+            padding-top: 0;
+            font-size: 14px;
+        }
+.filter-total {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 4px;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top:170px;
+}
+.filter-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+    .filter-item i {
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+#all-prod-gaming {
+    border-left: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+    #all-prod-gaming tr td:hover {
+        box-shadow:3px 3px 3px #ddd;
+    }
+    #all-prod-gaming tr td a i {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+#moreprd {
+    transition-duration: 0.4s;
+}
+#moreprd:hover {
+    background-color: #288ad6;
+    color: white; 
 }
